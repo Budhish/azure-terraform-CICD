@@ -10,6 +10,7 @@ steps:
   inputs:
     command: 'init'
     backendType: 'azurerm'
+    backendServiceArm: 'Free Trial (e191435e-1cdf-467f-94f5-b1c6c10bede5)'
     allowTelemetryCollection: false
 - task: Bash@3
   displayName: "Collect workspace details"
