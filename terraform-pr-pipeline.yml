@@ -41,7 +41,7 @@ steps:
   displayName: "Terraform plan"
   inputs:
     command: 'plan'
-    environmentServiceName: 'Pay-As-You-Go (69fc0447-bb32-4449-bce8-002d5b9938c9)'
+    environmentServiceName: 'Free Trial (e191435e-1cdf-467f-94f5-b1c6c10bede5)'
     runAzLogin: true
     commandOptions: '-var-file $(workspace).tfvars'
     allowTelemetryCollection: true
