@@ -10,7 +10,6 @@ steps:
   inputs:
     command: 'init'
     backendType: 'azurerm'
-    backendServiceArm: 'azlogin'
     allowTelemetryCollection: false
 - task: Bash@3
   displayName: "Collect workspace details"
@@ -45,4 +44,5 @@ steps:
     runAzLogin: true
     commandOptions: '-var-file $(workspace).tfvars'
     allowTelemetryCollection: true
+
 
