@@ -6,9 +6,9 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "b3-rg1"
-    storage_account_name = "terraformcicdremote"
-    container_name       = "remotestatefile"
+    resource_group_name  = "madan-RG"
+    storage_account_name = "javaterraformcicd"
+    container_name       = "javaterraformremote"
     key                  = "terraform.tfstate"
   }
 
