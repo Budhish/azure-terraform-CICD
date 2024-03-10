@@ -10,7 +10,7 @@ steps:
   inputs:
     command: 'init'
     backendType: 'azurerm'
-    backendServiceArm: 'azlogin'
+    backendServiceArm: 'Free Trial (e191435e-1cdf-467f-94f5-b1c6c10bede5)'
     allowTelemetryCollection: false
 
 - task: Bash@3
@@ -25,12 +25,11 @@ steps:
     command: 'workspace'
     allowTelemetryCollection: true
     workspaceName: '$(workspace)'
-    
+
 - task: TerraformCLI@2
   displayName: "Terraform apply"
   inputs:
     command: 'apply'
-    environmentServiceName: 'Pay-As-You-Go (69fc0447-bb32-4449-bce8-002d5b9938c9)'
-    runAzLogin: true
+    environmentServiceName: 'Free Trial (e191435e-1cdf-467f-94f5-b1c6c10bede5)'
     commandOptions: '-var-file $(workspace).tfvars'
-    allowTelemetryCollection: true
+    allowTelemetryCollection: false
